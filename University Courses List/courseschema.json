@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "courses": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "courseIcon": {
+              "type": "string"
+            },
+            "courseID": {
+              "type": "string"
+            },
+            "courseName": {
+              "type": "string"
+            },
+            "courseLevel": {
+              "type": "string"
+            },
+            "courseFees": {
+              "type": "number"
+            },
+            "courseCurrency": {
+              "type": "string"
+            },
+            "courseDuration": {
+              "type": "string"
+            },
+            "courseLocation": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "courseIcon",
+            "courseID",
+            "courseName",
+            "courseLevel",
+            "courseFees",
+            "courseCurrency",
+            "courseDuration",
+            "courseLocation"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "$schema",
+    "courses"
+  ]
+}

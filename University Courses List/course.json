@@ -1,0 +1,103 @@
+
+[
+  {
+    "courseIcon": "icons/accounting.png",
+    "courseID": "N301",
+    "courseName": "International Finance (Top-Up) BSc (Hons)",
+    "courseLevel": "Undergraduate",
+    "courseFees": 9250,
+    "courseCurrency": "GBP",
+    "courseDuration": "Full Time: 1 year",
+    "courseLocation": "Waterside"
+  },
+  {
+    "courseIcon": "icons/art.png",
+    "courseID": "W100",
+    "courseName": "Fine Art BA (Hons)",
+    "courseLevel": "Undergraduate",
+    "courseFees": 9250,
+    "courseCurrency": "GBP",
+    "courseDuration": "Full Time: 3 years",
+    "courseLocation": "Waterside"
+  },
+  {
+    "courseIcon": "icons/biochemistry.png",
+    "courseID": "C700",
+    "courseName": "Biochemistry BSc (Hons)",
+    "courseLevel": "Undergraduate",
+    "courseFees": 9250,
+    "courseCurrency": "GBP",
+    "courseDuration": "Full Time: 3 years",
+    "courseLocation": "Waterside"
+  },
+  {
+    "courseIcon": "icons/computer.png",
+    "courseID": "I100",
+    "courseName": "Computer Science BSc (Hons)",
+    "courseLevel": "Undergraduate",
+    "courseFees": 9250,
+    "courseCurrency": "GBP",
+    "courseDuration": "Full Time: 3 years",
+    "courseLocation": "Waterside"
+  },
+  {
+    "courseIcon": "icons/history.png",
+    "courseID": "V100",
+    "courseName": "History BA (Hons)",
+    "courseLevel": "Undergraduate",
+    "courseFees": 9250,
+    "courseCurrency": "GBP",
+    "courseDuration": "Full Time: 3 years",
+    "courseLocation": "Waterside"
+  },
+  {
+    "courseIcon": "icons/media.png",
+    "courseID": "P500",
+    "courseName": "Multimedia Journalism BA (Hons)",
+    "courseLevel": "Undergraduate",
+    "courseFees": 9250,
+    "courseCurrency": "GBP",
+    "courseDuration": "Full Time: 3 years",
+    "courseLocation": "Waterside"
+  },
+  {
+    "courseIcon": "icons/advertising.png",
+    "courseID": "N564",
+    "courseName": "Advertising & Digital Marketing BA (Hons)",
+    "courseLevel": "Undergraduate",
+    "courseFees": 9250, 
+    "courseCurrency": "GBP",
+    "courseDuration": "Full Time: 3 years",
+    "courseLocation": "Waterside"
+  },
+  {
+    "courseIcon": "icons/business.png",
+    "courseID": "N124",
+    "courseName": "Business Management BA (Hons)",
+    "courseLevel": "Undergraduate",
+    "courseFees": 9250,
+    "courseCurrency": "GBP",
+    "courseDuration": "Full Time: 3 years",
+    "courseLocation": "Waterside"
+  },
+  {
+    "courseIcon": "icons/circuit.png",
+    "courseID": "H601",
+    "courseName": "Electronics And Computer Engineering BEng (Hons)",
+    "courseLevel": "Undergraduate",
+    "courseFees": 9250,
+    "courseCurrency": "GBP",
+    "courseDuration": "Full Time: 3 years",
+    "courseLocation": "Waterside"
+  }, 
+  {
+    "courseIcon": "icons/medical.png",
+    "courseID": "B950",
+    "courseName": "Paramedic Science BSc (Hons)",
+    "courseLevel": "Undergraduate",
+    "courseFees": 9250,
+    "courseCurrency": "GBP",
+    "courseDuration": "Full Time: 3 years",
+    "courseLocation": "Waterside"
+  }      
+]

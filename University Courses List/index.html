@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Courses List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/course.css">
+    <script src="js/course.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <ul class="nav">
+        <li><a href="#">Study</a></li>
+        <li><a href="#">Student Life</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">About Us</a></li> 
+    </ul>
+
+    <!-- Heading Texts -->
+    <div class="heading">
+        <h1 class="heading">Find the Courses Offered in Our University Below</h1>
+        <h3 class="subheading">Other Related Information Included</h3>
+    </div>
+
+    <hr>
+
+    <select onchange="currencySwitch();" name="currency" class="currency-dropdown" id="currency-selector">
+        <option value="" disabled selected hidden>Select FX currency conversion</option>
+        <option value="GBP">(£) British Pound Sterling</option>
+        <option value="USD">($) United States Dollar</option>
+        <option value="EUR">(€) Euro</option>
+        <option value="MUR">(RS) Mauritian Rupees</option>
+
+    </select>
+
+    <!-- Container to hold the table -->
+    <div class="container">
+        <table id="courses" cellspacing="2" cellpadding="10px">
+
+        </table>
+    </div>
+
+    <footer>
+        <p>University Courses List. &copy; 2023, Ukaonu Darlington Chisom.</p>
+    </footer>
+
+</body>
+
+</html>

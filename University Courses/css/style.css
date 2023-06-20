@@ -1,0 +1,358 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: grey;
+  display: inline-block;
+  margin: 0;
+}
+
+.header-text {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  float: left;
+  margin-left: 1%;
+}
+
+header .username-text
+{
+  color:  rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 1.5% 3%;
+  float: right;
+
+}
+
+header .logout-text
+{
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+header .logout-text:hover{
+
+  color: #ffffff;
+  background-color: rgb(32, 69, 97);
+  transition: 0.3s ease-in-out;
+}
+
+.course-hero-text{
+  text-align: center;
+  padding: 10px;
+}
+
+.username-text span
+{
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.side-navigation {
+  height: 100%;
+  width: 220px;
+  background-color: #f8f8f8;
+  box-shadow: #a9a9a9 3px 1px 15px;
+}
+
+.side-navigation a {
+  padding: 20px 8px 20px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+  color: #818181;
+  display: block;
+  text-align: left;
+}
+
+.side-navigation a:hover {
+  color: #ffffff;
+  background-color: rgb(32, 69, 97);
+  transition: 0.3s ease-in-out;
+}
+
+footer {
+  background-color: grey;
+  display: flex;
+  margin: 0;
+  padding: 7px;
+  justify-content: left;
+}
+
+footer p {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 1%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100%;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 87.2%;
+}
+
+a.logout {
+  background-color: grey;
+  color: white;
+}
+
+.course-form-container {
+  width: 80%;
+  padding: 10px;
+  margin: 20px auto 50px;
+  align-content: center;
+}
+
+.course-report-container {
+  width: 40%;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.cursor-restrict{
+  cursor: not-allowed;
+}
+
+.input-uppercase{
+
+  text-transform: capitalize;
+
+}
+
+.vc-uppercase
+{
+  text-transform: uppercase;
+}
+
+.course-form-container form {
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  align-content: center;
+}
+
+.course-form-container input:focus {
+  outline: none !important;
+  border: 1px solid rgb(32, 69, 97);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.login-error{
+  font-size: 12px;
+  color: rgb(133, 4, 4);
+  text-align: center;
+  font-weight: normal;
+  transition:  0.5s ease-in-out;
+}
+
+input[type="text"], input[type="number"], input[type="month"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  transition: 0.3s ease-in-out;
+  background-color: rgb(32, 69, 97);
+}
+
+table {
+  padding: 5px;
+  border-collapse: separate;
+  width: 90%;
+  margin: 1.5% auto 0 auto;
+  text-align: center;
+}
+
+.header-table-head:hover
+{
+  box-shadow: none;
+  cursor: auto;
+}
+
+table h4 {
+  font-size: 18px;
+  color: rgb(32, 69, 97);
+}
+
+
+input[type="checkbox"]:hover
+{
+  cursor: pointer;
+}
+
+table th,
+td {
+  border-bottom: 1px solid rgba(32, 69, 97, 0.396);
+  padding: 28px 0;
+}
+
+/* table tr:hover {
+  box-shadow: #a9a9a9 3px 1px 15px;
+  transition: 0.2s ease-in-out;
+  cursor: auto;
+} */
+
+.report-button {
+  padding: 10px;
+  background-color: black;
+  border: none;
+  color: white;
+  height: 35px;
+  font-family: "Quicksand", sans-serif;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: normal;
+  position: relative;
+  margin: 3% 0 0 5%;
+}
+
+.report-button:hover {
+  background-color: rgb(32, 69, 97);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.login-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.515);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.login-form input[type="text"],
+input[type="password"],
+select {
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+  padding: 12px 20px;
+  margin: 15px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-form input[type="submit"] {
+  margin-top: 20px;
+}
+
+.login-form h2 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.login-form input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none !important;
+  border: 1px solid rgba(32, 69, 97, 0.46);
+}
+
+.operation-button{
+  text-decoration: none;
+  font-size: 13px;
+  border-radius: 5px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.operation-button.edit{
+  background-color: rgba(217, 150, 26, 0.752);
+  color: black;
+}
+
+.operation-button.edit:hover{
+  transition: .3s ease-in-out;
+  background-color: rgb(250, 163, 0);
+}
+
+.operation-button.add{
+  background-color: rgba(31, 29, 29, 0.882);
+  color: white;
+}
+
+.operation-button.add:hover{
+  transition: .3s ease-in-out;
+  background-color: rgb(0, 0, 0);
+}
+
+.operation-button.delete{
+  background-color: rgba(170, 40, 40, 0.836);
+  color: white;
+}
+
+.operation-button.delete:hover{
+  background-color: rgba(235, 15, 15, 0.836);
+  transition: .3s ease-in-out;
+
+}

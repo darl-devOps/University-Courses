@@ -1,0 +1,111 @@
+
+html
+{
+  height: 100%;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+.nav {
+  list-style-type: none;
+  background-color: grey;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+}
+.nav li a {
+  text-decoration: none;
+  padding: 25px 60px;
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+.nav li a:hover {
+  color: rgb(0, 0, 0);
+  transition: 0.3s ease-in-out;
+}
+.heading {
+  text-align: center;
+  margin: 20px auto;
+  padding: 5px;
+}
+table {
+  padding: 5px;
+  border-collapse: separate;
+  width: 100%;
+  border-spacing: 25px;
+}
+.container {
+  margin: 1% 15%;
+  flex: 1;
+}
+.course-name {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 15px;
+  background-color: grey;
+}
+.course-icon
+{
+  height: 40px;
+  width: 40px;
+}
+
+table h4 {
+  font-size: 13px;
+}
+td.course-card {
+  box-shadow: #e8e7e7 2px 2px 30px;
+  padding: 20px;
+  width: 10%;
+  text-align: center;
+}
+td.course-card:hover {
+  cursor: pointer;
+  color: rgb(32, 69, 97);
+}
+td.course-card:hover .course-name {
+  background-color: rgb(32, 69, 97);
+  transition: 0.3s ease-in-out;
+}
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  width: 3%;
+  margin-top: 5px;
+  border-color: grey;
+  border-width: 10px;
+}
+.currency-dropdown
+{
+  margin: 20px auto 5px;
+  display: flex;
+  justify-content: center;
+  width: 11%;
+  height: 40px;
+  border: 1px rgb(32, 69, 97) solid;
+  border-radius: 10px;
+  padding: 5px;
+}
+footer {
+  background-color: rgb(32, 69, 97);
+  padding: 20px;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
