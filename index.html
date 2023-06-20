@@ -1,0 +1,102 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFF;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 10%;
+            margin-top: 10%;
+        }
+
+        .app-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 30%;
+        }
+
+        .ucl {
+            display: flex;
+            background-color: #FFF;
+            height: 200px;
+            width: 200px;
+            margin: 20px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 5px 6px 20px #b9c7cb;
+        }
+
+        .uc {
+            display: flex;
+            background-color: #FFF;
+            height: 200px;
+            margin: 20px;
+            width: 200px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 5px 6px 20px #b9c7cb;
+        }
+
+        .app-container a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .ucl:hover {
+            transition: .3s ease-in-out;
+            transform: scale(1.1);
+        }
+
+        .uc:hover {
+            transition: .3s ease-in-out;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>University Courses</h2>
+        <h4>Please Select an Application</h4>
+
+    </div>
+
+
+    <div class="app-container">
+
+            <a href="University Courses List/" class="ucl">University Courses List</a>
+
+            <a href="University Courses/" class="uc">University Courses</a>
+      
+    </div>
+
+
+
+</body>
+
+</html>
