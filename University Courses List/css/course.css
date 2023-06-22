@@ -31,10 +31,11 @@ body {
   color: white;
   font-weight: bold;
   font-size: 18px;
+  transition: all .3s ease-in-out;
+
 }
 .nav li a:hover {
   color: rgb(0, 0, 0);
-  transition: 0.3s ease-in-out;
 }
 .heading {
   text-align: center;
