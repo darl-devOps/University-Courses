@@ -30,13 +30,14 @@ function updateCourses() {
         }
         let cellInsert = row.insertCell();
         //Declaration and assignment of a variable to display the fees to the nearest value with 2 decimal places
-        const floatedFee = data[i].courseFees.toFixed(2);
+        const floatedFee = data[i].courseFees;
+        const comSepFee = data[i].courseFees.toLocaleString("en-US");
         cellInsert.innerHTML = `
                          
                   <img class = "course-icon" src="${data[i].courseIcon}" alt="course-icon">
                   <h3 class="course-name">${data[i].courseName}</h3>
                   <h4>Course ID: ${data[i].courseID}</h4>
-                  <h4 class = "course-fees" data-orig-amount = "${floatedFee}">Fees: <span class="course-fee-amount">${floatedFee}</span><span class = "currSym" data-orig-curr = "${data[i].courseCurrency}"> ${data[i].courseCurrency}</span></h4>
+                  <h4 class = "course-fees" data-orig-amount = "${floatedFee}">Fees: <span class="course-fee-amount">${comSepFee}</span><span class = "currSym" data-orig-curr = "${data[i].courseCurrency}"> ${data[i].courseCurrency}</span></h4>
                   <h4>Level: ${data[i].courseLevel}</h4>
                   <h4>Starting: September</h4>
                   <h4>Duration: ${data[i].courseDuration}</h4>
@@ -66,25 +67,25 @@ function currencySwitch() {
   allCourseFeesElements.forEach((courseFeesElement) => {
     let origCourseFeesValue = parseFloat(
       courseFeesElement.parentNode.dataset.origAmount
-    ).toFixed(2);
+    );
     let origCurrencySymbol =
       courseFeesElement.parentNode.querySelector(".currSym").dataset.origCurr;
 
     if (cs.selectedIndex === 1) {
-      courseFeesElement.innerHTML = origCourseFeesValue.toString();
+      courseFeesElement.innerHTML = origCourseFeesValue.toLocaleString("en-US").toString();
       courseFeesElement.parentNode.querySelector(".currSym").innerHTML =
         " " + origCurrencySymbol;
     } else if (cs.selectedIndex === 2) {
-      let newCourseFeesValue = (origCourseFeesValue * 1.39).toFixed(2);
+      let newCourseFeesValue = (origCourseFeesValue * 1.39).toLocaleString("en-US");
       courseFeesElement.innerHTML = newCourseFeesValue.toString();
       courseFeesElement.parentNode.querySelector(".currSym").innerHTML = " USD";
     } else if (cs.selectedIndex === 3) {
-      let newCourseFeesValue = (origCourseFeesValue * 1.16).toFixed(2);
+      let newCourseFeesValue = (origCourseFeesValue * 1.16).toLocaleString("en-US");
       courseFeesElement.innerHTML = newCourseFeesValue.toString();
       courseFeesElement.parentNode.querySelector(".currSym").innerHTML = " EUR";
     }
     else if (cs.selectedIndex === 4) {
-      let newCourseFeesValue = (origCourseFeesValue * 58.09).toFixed(2);
+      let newCourseFeesValue = (origCourseFeesValue * 58.09).toLocaleString("en-US");
       courseFeesElement.innerHTML = newCourseFeesValue.toString();
       courseFeesElement.parentNode.querySelector(".currSym").innerHTML = " MUR";
     }
