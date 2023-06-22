@@ -63,7 +63,9 @@ table {
 .course-icon
 {
   height: 40px;
+  transition: all 0.3s ease-in-out;
   width: 40px;
+  filter: grayscale(100%);
 }
 
 table h4 {
@@ -85,6 +87,10 @@ td.course-card:hover {
 }
 td.course-card:hover .course-name {
   background-color: rgb(32, 69, 97);
+}
+
+td.course-card:hover .course-icon {
+  filter: grayscale(0);
 }
 hr {
   border-style: none;
