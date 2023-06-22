@@ -58,6 +58,7 @@ table {
   padding: 10px;
   font-size: 15px;
   background-color: grey;
+  transition: all 0.3s ease-in-out;  
 }
 .course-icon
 {
@@ -73,14 +74,17 @@ td.course-card {
   padding: 20px;
   width: 10%;
   text-align: center;
+  transition: all 0.3s ease-in-out;
+  
+
 }
 td.course-card:hover {
   cursor: pointer;
+  transform: scale(1.05);
   color: rgb(32, 69, 97);
 }
 td.course-card:hover .course-name {
   background-color: rgb(32, 69, 97);
-  transition: 0.3s ease-in-out;
 }
 hr {
   border-style: none;
