@@ -19,6 +19,14 @@ else if(isset($_GET['status']) && $_GET['status'] === 'addedMod'){
     </script>";
 
 }
+else if(isset($_GET['status']) && $_GET['status'] === 'exists'){
+
+    echo
+    "<script>
+    alert('Duplicate Module Name or Code. Try Again.');
+    </script>";
+
+}
 else if (isset($_GET['operationDel']) && $_GET['operationDel'] === 'error') {
     echo
         "<script>
@@ -55,7 +63,7 @@ else if (isset($_GET['operationDel']) && $_GET['operationDel'] === 'error') {
 <body>
     <!-- Header -->
     <header>
-        <p class="header-text"> University Courses - Course Report</p>
+        <p class="header-text">CYSM019 University Courses - Course Report</p>
         <p class="username-text">Hello,  <span><?php echo $_SESSION['username'] ?></span>&nbsp;&nbsp;&nbsp;<a class="logout-text" href="scripts/logout.php">Logout</a></p>
     </header>
 
@@ -117,12 +125,12 @@ else if (isset($_GET['operationDel']) && $_GET['operationDel'] === 'error') {
 
                             ?>
                                         <tr>
-                                            <td><input type="checkbox" name="course_id[]" value="<?php echo $course['id']; ?>"></td>
+                                            <td><input type="checkbox" name="selected-courses[]" value="<?php echo $course['id']; ?>" onchange="countSelectedCourses();"></td>
                                             <td><?php echo $course['course_title']; ?></td>
                                             <td><?php echo $course['course_code']; ?></td>
                                             <td><?php echo $course['course_level']; ?></td>
                                             <!-- <td><?php echo $course['school_faculty']; ?></td> -->
-                                            <td><?php echo $course['tuition_fees']; ?></td>
+                                            <td><?php echo number_format($course['tuition_fees']); ?></td>
                                             <td><?php echo $course['starting_date']; ?></td>
                                             <td><?php echo $course['course_duration']; ?></td>
                                             <td><?php echo $course['course_location']; ?></td>
@@ -144,8 +152,8 @@ else if (isset($_GET['operationDel']) && $_GET['operationDel'] === 'error') {
                    
             </table>
             <!-- Generate Report Button -->
+            <input type="hidden" name="num-selected-courses" value="0">
            <button type="submit" name="generate-report" class="report-button">Generate Course Report(s)</button>
-           <input type="hidden" name="selected-courses" value="">
            </form>
         </div>
 
