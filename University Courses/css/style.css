@@ -356,3 +356,12 @@ input[type="password"]:focus {
   transition: .3s ease-in-out;
 
 }
+
+.genChart{
+  margin: 100px auto;
+  width: 60%;
+  height: 50%;
+  text-align: center;
+}
+
+
