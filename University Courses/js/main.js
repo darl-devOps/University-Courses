@@ -109,14 +109,18 @@ function generateChart(){
   if(chartArea.style.display === "block"){
     genButton.addEventListener("click", function(){
       chartArea.style.display = "none";
-      genButton.textContent = "Double Click to Generate Chart for Analysis >>>";
+      genButton.textContent = "Double Click to Generate Chart Data for Analysis >>>";
     });
   }
+}
 
-
-
-
-
+function printGeneratedReport(){
+  var printSection = document.getElementById('printSection');
+  var printWindowSection = window.open('', '', 'left=0, top=0, width=800, height=500, toolbar=0, scrollbars=0, status=0');
+  printWindowSection.document.write(printSection.innerHTML, );
+  printWindowSection.document.close();
+  printWindowSection.focus();
+  printWindowSection.print();
 }
 
 

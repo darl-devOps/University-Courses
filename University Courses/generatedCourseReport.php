@@ -48,7 +48,7 @@ if (!empty($_SESSION['course_ids']) && !empty($_SESSION['course_codes']) && !emp
 
 
                         <!-- Course Display Container in Tabular Format -->
-                        <div class="course-report-container">
+                        <div id="printSection" class="course-report-container">
 
                         <?php
                         // Loop through each course and its corresponding module data
@@ -108,7 +108,8 @@ if (!empty($_SESSION['course_ids']) && !empty($_SESSION['course_codes']) && !emp
                         }
                         ?>
                            <div class="genChart">
-                            <button id="genButton" class="showChart" onclick="generateChart();" value="">Double Click to Generate Chart for Analysis >>></button>
+                            <button id="genButton" class="showChart" onclick="generateChart();" value="">Double Click to Generate Chart Data for Analysis >>></button>
+                            <button id="printButton" class="printPage" onclick="printGeneratedReport();" value="Print Report">Print Course Report</button>
                             <br>
                            </div>
                            <div id="chartArea" class="chartCanvas">
