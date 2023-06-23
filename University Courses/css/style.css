@@ -17,7 +17,7 @@ body {
 }
 
 header {
-  background-color: grey;
+  background-color: rgb(32, 69, 97);
   display: inline-block;
   margin: 0;
 }
@@ -95,7 +95,7 @@ header .logout-text:hover{
 }
 
 footer {
-  background-color: grey;
+  background-color: rgb(32, 69, 97);
   display: flex;
   margin-top: auto;
   padding: 7px;
