@@ -3,9 +3,6 @@
 
 }
 
-html {
-  height: 100%;
-}
 
 body {
   margin: 0;
@@ -15,7 +12,7 @@ body {
   -webkit-appearance: none;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  min-height: 100vh;
   box-sizing: border-box;
 }
 
@@ -75,7 +72,7 @@ header .logout-text:hover{
 }
 
 .side-navigation {
-  height: 100%;
+  min-height: 100vh;
   width: 220px;
   background-color: #f8f8f8;
   box-shadow: #a9a9a9 3px 1px 15px;
@@ -100,9 +97,9 @@ header .logout-text:hover{
 footer {
   background-color: grey;
   display: flex;
-  margin: 0;
+  margin-top: auto;
   padding: 7px;
-  justify-content: left;
+  justify-content: space-around;
 }
 
 footer p {
