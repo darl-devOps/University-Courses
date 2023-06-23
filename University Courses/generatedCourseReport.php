@@ -108,8 +108,10 @@ if (!empty($_SESSION['course_ids']) && !empty($_SESSION['course_codes']) && !emp
                         }
                         ?>
                            <div class="genChart">
-                            <h2>See Generated Chart Below</h2>
+                            <button id="genButton" class="showChart" onclick="generateChart();" value="">Double Click to Generate Chart for Analysis >>></button>
                             <br>
+                           </div>
+                           <div id="chartArea" class="chartCanvas">
                            <canvas id="myChart"></canvas>
                            </div>
     </div>

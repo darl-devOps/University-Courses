@@ -96,4 +96,27 @@ function confirmDelete(id, course_code) {
   }
 }
 
+function generateChart(){
+
+  let genButton = document.getElementById('genButton');
+  let chartArea = document.getElementById('chartArea');
+
+  genButton.addEventListener("click", function(){
+    genButton.textContent = "Double Click to Hide Generated Chart <<<";
+    chartArea.style.display = "block";
+  });
+
+  if(chartArea.style.display === "block"){
+    genButton.addEventListener("click", function(){
+      chartArea.style.display = "none";
+      genButton.textContent = "Generate Chart for Analysis >>>";
+    });
+  }
+
+
+
+
+
+}
+
 

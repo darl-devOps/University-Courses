@@ -1,9 +1,13 @@
+*{
+  font-family: "Quicksand", sans-serif;
+
+}
+
 html {
   height: 100%;
 }
 
 body {
-  font-family: "Quicksand", sans-serif;
   margin: 0;
   padding: 0;
   appearance: none;
@@ -358,10 +362,28 @@ input[type="password"]:focus {
 }
 
 .genChart{
+
+  text-align: center;
+  margin: 50px auto;
+
+}
+
+#genButton{
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chartCanvas{
   margin: 100px auto;
+  display: none;
   width: 60%;
   height: 50%;
   text-align: center;
 }
+
+
 
 
