@@ -373,6 +373,12 @@ input[type="password"]:focus {
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
+  transition: all .3s ease-in-out;
+}  
+
+#genButton:hover{
+  background-color: rgb(32, 69, 97);
+
 }
 
 #printButton{
@@ -381,15 +387,28 @@ input[type="password"]:focus {
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+#printButton:hover{
+  background-color: rgb(32, 69, 97);
+
 }
 .chartCanvas{
   margin: 100px auto;
   display: none;
-  width: 60%;
-  height: 50%;
+  width: 45%;
+  height: 40%;
   text-align: center;
 }
 
+
+@media print{
+  body{
+    transform: scale(0.90);
+    transform-origin: 0 0;
+  }
+}
 
 
 
