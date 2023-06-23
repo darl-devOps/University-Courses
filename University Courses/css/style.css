@@ -54,13 +54,13 @@ header .logout-text
   cursor: pointer;
   font-size: 13px;
   font-weight: normal;
+  transition: all 0.3s ease-in-out;
 }
 
 header .logout-text:hover{
 
   color: #ffffff;
   background-color: rgb(32, 69, 97);
-  transition: 0.3s ease-in-out;
 }
 
 .course-hero-text{
@@ -87,6 +87,7 @@ header .logout-text:hover{
   font-size: 16px;
   font-weight: normal;
   color: #818181;
+  transition: all 0.3s ease-in-out;
   display: block;
   text-align: left;
 }
@@ -94,7 +95,6 @@ header .logout-text:hover{
 .side-navigation a:hover {
   color: #ffffff;
   background-color: rgb(32, 69, 97);
-  transition: 0.3s ease-in-out;
 }
 
 footer {
@@ -213,6 +213,7 @@ input[type="submit"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: all .3s ease-in-out;
   width: 100%;
 }
 
@@ -272,11 +273,11 @@ td {
   font-weight: normal;
   position: relative;
   margin: 3% 0 0 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .report-button:hover {
   background-color: rgb(32, 69, 97);
-  transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 
@@ -307,6 +308,8 @@ select {
 
 .login-form input[type="submit"] {
   margin-top: 20px;
+  transition: all .3s ease-in-out;
+
 }
 
 .login-form h2 {
@@ -333,32 +336,31 @@ input[type="password"]:focus {
 .operation-button.edit{
   background-color: rgba(217, 150, 26, 0.752);
   color: black;
+  transition: all .3s ease-in-out;
 }
 
 .operation-button.edit:hover{
-  transition: .3s ease-in-out;
   background-color: rgb(250, 163, 0);
 }
 
 .operation-button.add{
   background-color: rgba(31, 29, 29, 0.882);
   color: white;
+  transition: all .3s ease-in-out;
 }
 
 .operation-button.add:hover{
-  transition: .3s ease-in-out;
   background-color: rgb(0, 0, 0);
 }
 
 .operation-button.delete{
   background-color: rgba(170, 40, 40, 0.836);
   color: white;
+  transition: all .3s ease-in-out;
 }
 
 .operation-button.delete:hover{
   background-color: rgba(235, 15, 15, 0.836);
-  transition: .3s ease-in-out;
-
 }
 
 .genChart{

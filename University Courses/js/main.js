@@ -109,7 +109,7 @@ function generateChart(){
   if(chartArea.style.display === "block"){
     genButton.addEventListener("click", function(){
       chartArea.style.display = "none";
-      genButton.textContent = "Generate Chart for Analysis >>>";
+      genButton.textContent = "Double Click to Generate Chart for Analysis >>>";
     });
   }
 
