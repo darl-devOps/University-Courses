@@ -108,7 +108,8 @@ if (!empty($_SESSION['course_ids']) && !empty($_SESSION['course_codes']) && !emp
                         }
                         ?>
                            <div class="genChart">
-                            <h2>Generated Chart</h2>
+                            <h2>See Generated Chart Below</h2>
+                            <br>
                            <canvas id="myChart"></canvas>
                            </div>
     </div>
@@ -118,19 +119,19 @@ if (!empty($_SESSION['course_ids']) && !empty($_SESSION['course_codes']) && !emp
         var ctx = document.getElementById("myChart").getContext("2d");
 
         var myPieChart = new Chart(ctx, {
-            type: "doughnut",
+            type: "polarArea",
             data: {
                 datasets: [
                     {
                         data: moduleData.map(module => module.credits),
                         backgroundColor: [
-                            "#204875",
-                            "#000000",
+                            "#116D6E",
+                            "#2B2A4C",
                             "#54e69d",
-                            "#c4b5ff",
-                            "#ffadad",
-                            "#fcbc8d",
-                            "#FD6736"
+                            "#525FE1",
+                            "#4E3636",
+                            "#22A699",
+                            "#B31312"
                         ],
                         label: "Credits"
                     }
