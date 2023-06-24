@@ -69,7 +69,7 @@ mysqli_close($conn);
                         <input class="input-uppercase" type="text" name="level-of-study" id="level-of-study" value="<?php echo $course['course_level']; ?>">
 
                         <label for="tuition-fees">Tuition Fees (GBP):</label>
-                        <input type="text" name="tuition-fees" id="tuition-fees" value="<?php echo number_format($course['tuition_fees']); ?>">
+                        <input type="text" name="tuition-fees" id="tuition-fees" value="<?php echo $course['tuition_fees']; ?>">
 
                         <label for="no-of-int">Number of International Students:</label>
                         <input type="number" name="no-of-int" id="no-of-int" value="<?php echo $course['international_students']; ?>">
