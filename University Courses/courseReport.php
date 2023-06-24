@@ -61,6 +61,11 @@ else if (isset($_GET['operationDel']) && $_GET['operationDel'] === 'error') {
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div class="loader-bg">
+        <div class="loader">
+        </div>
+    </div>
     <!-- Header -->
     <header>
         <p class="header-text">CYSM019 University Courses - Course Report</p>
@@ -167,6 +172,13 @@ else if (isset($_GET['operationDel']) && $_GET['operationDel'] === 'error') {
 
 </body>
 <script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader-bg').fadeToggle();
+        }, 1000);
+    </script>
+
 
 
 </html>
