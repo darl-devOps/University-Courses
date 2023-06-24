@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 20, 2023 at 11:03 AM
+-- Generation Time: Jun 24, 2023 at 07:27 PM
 -- Server version: 8.0.33-0ubuntu0.22.04.2
 -- PHP Version: 8.2.7
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `cysm019_assignment_2023`
+-- Database: `uniCourses`
 --
 
 -- --------------------------------------------------------
@@ -47,16 +47,19 @@ CREATE TABLE `courses` (
 
 INSERT INTO `courses` (`id`, `course_title`, `course_code`, `course_level`, `tuition_fees`, `students_enrolled`, `international_students`, `local_students`, `starting_date`, `course_duration`, `course_location`) VALUES
 (24, 'International Accounting (Top-Up) BSc (Hons)', 'N491', 'Undergraduate', 9250, 276, 98, 178, '2023-09', 3, 'Waterside'),
-(25, 'Fine Art BA (Hons)', 'W101', 'Undergraduate', 9250, 123, 76, 47, '2024-09', 4, 'Development Hub (Waterside)'),
+(25, 'Fine Art BA (Hons)', 'W101', 'Undergraduate', 10023, 123, 76, 47, '2024-09', 4, 'Development Hub (Waterside)'),
 (26, 'Biochemistry BSc (Hons)', 'C701', 'Undergraduate', 9250, 85, 42, 43, '2023-09', 4, 'Waterside'),
 (27, 'Computer Science BSc (Hons)', 'I101', 'Undergraduate', 9250, 675, 232, 443, '2023-09', 4, 'Waterside'),
 (28, 'History BA (Hons)', 'V102', 'Undergraduate', 9250, 79, 45, 34, '2023-09', 4, 'Waterside'),
 (29, 'Multimedia Journalism BA (Hons)', 'P501', 'Undergraduate', 9250, 188, 134, 54, '2023-09', 4, 'Waterside'),
-(30, 'Advertising & Digital Marketing BA (Hons)', 'N561', 'Undergraduate', 9250, 154, 56, 98, '2023-09', 4, 'Waterside'),
-(31, 'Business Management BA (Hons)', 'N125', 'Undergraduate', 9250, 145, 57, 88, '2023-09', 4, 'Waterside'),
+(30, 'Advertising & Digital Marketing BA (Hons)', 'N561', 'Undergraduate', 9250, 154, 56, 98, '2023-11', 4, 'Waterside'),
+(31, 'Business Management BA (Hons)', 'N125', 'Undergraduate', 12000, 145, 57, 88, '2023-09', 4, 'Waterside'),
 (32, 'Paramedic Science BSc (Hons)', 'B950', 'Undergraduate', 9250, 113, 46, 67, '2023-09', 3, 'Waterside'),
 (33, 'Electronics And Computer Engineering BEng (Hons)', 'H601', 'Undergraduate', 9250, 116, 45, 71, '2023-09', 4, 'Waterside'),
-(40, 'Test Course 1', 'TC101', 'Undergraduate', 10000, 68, 34, 34, '2023-12', 3, 'Waterside');
+(40, 'Test Course 1', 'TC101', 'Undergraduate', 5677, 68, 34, 34, '2023-12', 3, 'Waterside'),
+(41, 'Test Course 2', 'TC102', 'Undergraduate', 5400, 60, 40, 20, '2024-02', 3, 'Quatre Bornes'),
+(42, 'Test Course 3', 'TC103', 'Undergraduate', 12000, 100, 35, 65, '2023-09', 3, 'Glen Park'),
+(43, 'Test Course 7', 'TC1007', 'Undergraduate', 14000, 156, 67, 89, '2023-12', 3, 'Asokoro, Abuja');
 
 -- --------------------------------------------------------
 
@@ -145,7 +148,13 @@ INSERT INTO `modules` (`id`, `course_code`, `module_code`, `module_name`, `modul
 (70, 'B950', 'PSC1012P', 'Paramedic Practice 1', 30),
 (71, 'B950', 'PSC2015', 'Paramedic Clinical Care ', 40),
 (72, 'B950', 'PSC4003', 'Practice-Focused Research Project', 40),
-(76, 'TC101', 'TCM101', 'Test Course Module 1', 20);
+(76, 'TC101', 'TCM101', 'Test Course Module 1', 20),
+(77, 'TC102', ' TCM104', 'Test Course Module4', 30),
+(78, 'TC103', 'TCM1004', 'Test Course Module 3', 30),
+(79, 'TC103', 'TCM1005', 'Test Course Module 5', 20),
+(80, 'TC103', 'TCM1006', 'Test Course Module 6', 40),
+(81, 'TC1007', 'TCS108', 'Sample Module 1', 20),
+(82, 'TC1007', 'TCS103', 'Sample Module 2', 30);
 
 -- --------------------------------------------------------
 
@@ -164,7 +173,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`username`, `password`) VALUES
 ('kwahbor', 'cysm019'),
-('admin', 'password');
+('admin', 'password'),
+('darlington', 'admin'),
+('gerald', 'admin');
 
 --
 -- Indexes for dumped tables
@@ -192,13 +203,13 @@ ALTER TABLE `modules`
 -- AUTO_INCREMENT for table `courses`
 --
 ALTER TABLE `courses`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `modules`
 --
 ALTER TABLE `modules`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=83;
 
 --
 -- Constraints for dumped tables
@@ -208,8 +219,7 @@ ALTER TABLE `modules`
 -- Constraints for table `modules`
 --
 ALTER TABLE `modules`
-  ADD CONSTRAINT `fk_courses` FOREIGN KEY (`course_code`) REFERENCES `courses` (`course_code`) ON DELETE CASCADE,
-  ADD CONSTRAINT `modules_ibfk_1` FOREIGN KEY (`course_code`) REFERENCES `courses` (`course_code`);
+  ADD CONSTRAINT `fk_courses` FOREIGN KEY (`course_code`) REFERENCES `courses` (`course_code`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
